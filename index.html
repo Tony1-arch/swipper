@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Swipper</title>
+</head>
+<body>
+    <div class="header">
+        <h1>SWIPPER SLIDER</h1>
+    </div>
+    <div class="main">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/11/57/dolphins-1869337__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2020/03/10/04/48/animal-4917802__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2015/09/22/14/34/lion-951778__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2014/11/21/15/39/grey-crowned-cranes-540657__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2016/04/06/01/32/red-fox-1310826__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2017/08/12/17/11/roe-deer-2634729__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2020/03/12/17/29/tiger-4925778__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+                <img src="https://cdn.pixabay.com/photo/2017/02/28/21/30/wolf-2106894__340.jpg"/>
+              </div>
+              <div class="swiper-slide">
+             <img src="https://cdn.pixabay.com/photo/2017/02/07/16/47/kingfisher-2046453__340.jpg"/>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              slidesPerView: 'auto',
+              spaceBetween: 20,
+              centeredSlides:true,
+              grabCursor:true,
+              loop: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+   
+</body>
+</html>
